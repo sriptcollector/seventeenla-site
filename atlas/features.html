@@ -20,18 +20,22 @@ ol,ul{margin:8px 0 8px 22px;font-size:12.5px;line-height:1.9}
 p{font-size:12.5px;line-height:1.9;margin:8px 0}</style></head><body>
 <nav><a href="index.html">screens</a><a href="features.html">features</a><a href="motion.html">motion plan</a><a href="questions.html">design questions</a></nav>
 <h1>every feature, and what's missing</h1>
-<p class="sub">left: built and live in TestFlight build 63 (+voice notes committed). right: honestly missing for users. you decide what stays, goes, and comes next — nothing here argues back.</p>
+<p class="sub">left: built, tested and committed (ships in the next TestFlight build). right: honestly missing for users. you decide what stays, goes, and comes next — nothing here argues back.</p>
 <h2 class='b'>BUILT — in your hand today</h2>
 <h2>getting in</h2><ul>
-<li>letters-voiced onboarding (11 steps, all skippable on the demo tour)</li>
+<li>letters-voiced onboarding (all skippable on the demo tour)</li>
 <li>16+ one-way birthdate door, tier set forever</li>
 <li>mandatory school step</li>
+<li>contacts are the gate: real permission, no bypass — seventeen runs on your people</li>
+<li>pick 3 of your people to come in; mutuals blend first, honestly marked</li>
+<li>one photo — the one they'll see (never "this is how you look")</li>
 <li>the door: 17/school/day, TRUE queue + invite-to-advance</li>
 <li>acceptance letter ceremony + &#x27;i&#x27;m in&#x27; share card</li>
 </ul>
 <h2>the room (feed)</h2><ul>
 <li>chaos/new/top/requests sorts</li>
-<li>posts: rants, questions/polls (real options + votes), requests with i&#x27;d-go commits, photo posts</li>
+<li>posts: rants, open questions (the room answers in replies), requests with i&#x27;d-go commits, photo posts</li>
+<li>late-night posts (10pm–1am window, gone by 7am) + one deterministic throwback a day</li>
 <li>threads: replies are the only signal — no likes anywhere</li>
 <li>anonymous posting (anonymous to the room, never to the engine)</li>
 <li>post-level report (works on anon posts)</li>
@@ -52,7 +56,10 @@ p{font-size:12.5px;line-height:1.9;margin:8px 0}</style></head><body>
 <li>actual DM threads, snap-structured rows (name + rail, no bubbles)</li>
 <li>enter sends, keyboard never drops</li>
 <li>real streaks 🔥 (days you BOTH showed up)</li>
-<li>photo messages (from the camera) + voice notes (hold to record)</li>
+<li>photo messages (from the camera) + voice notes (hold to record) that transcribe themselves on-device</li>
+<li>the snap layer: new / sent / opened / replied on every row — left-on-opened is real and visible</li>
+<li>presence in the chat surface: what they're doing right now, in the list and the thread header (never location)</li>
+<li>group chats (≤20, all in-tier) + 10-minute unsend with honest tombstones</li>
 </ul>
 <h2>letters</h2><ul>
 <li>written tonight → 8am delivery, sealed forever</li>
@@ -64,12 +71,12 @@ p{font-size:12.5px;line-height:1.9;margin:8px 0}</style></head><body>
 <li>17/day, reset midnight LA, no rollover; banked never expires</li>
 <li>costs 1·1·1·1·2·3·5·8·17; crown = the whole day, once, one person</li>
 <li>daily-first spend; 5s undo at tap; offline outbox with idempotency keys</li>
-<li>whispers — each emoji&#x27;s meaning under the pick</li>
 <li>giving streak (the only streak besides chat)</li>
 <li>crown ceremony + name-free crown share card</li>
 </ul>
 <h2>camera</h2><ul>
 <li>snap-style: full-bleed capture → send straight into a chat</li>
+<li>edit layer baked into the pixels: type, draw, and the looks — soft (slight beauty, the default) · none · mono · warm</li>
 <li>keep-it saves + becomes your page photo</li>
 <li>swipe-down = it never happened</li>
 </ul>
@@ -77,6 +84,8 @@ p{font-size:12.5px;line-height:1.9;margin:8px 0}</style></head><body>
 <li>3 golden tickets (real unique codes + pitch share)</li>
 <li>spots-left share on you page + empty feed</li>
 <li>queue letter share (&#x27;join from this and i move up&#x27;)</li>
+<li>ghost letters: write to someone not here yet — "send them the key" makes the letter itself the invite</li>
+<li>bring-your-people seams on every empty state — never a dead end</li>
 <li>live site: seventeenla.com content + og link preview + TestFlight funnel</li>
 </ul>
 <h2>safety (never paid, always on)</h2><ul>
@@ -91,19 +100,17 @@ p{font-size:12.5px;line-height:1.9;margin:8px 0}</style></head><body>
 <li>real phone/school verification (stubs accept anything)</li>
 <li>realtime: their messages/typing/presence/glances actually arriving</li>
 <li>push notifications (the 8am knock is local-only; nothing else pushes)</li>
-<li>real photos of real people (deck/person pages show doodles, not faces)</li>
+<li>real photos of OTHER people (your one photo is real; theirs need accounts — cards use honest monogram treatments, never fake faces)</li>
 </ul>
-<h2 class='m'>decided-but-unbuilt from your 500-item inventory</h2><ul>
-<li>17+ subscription (StoreKit, Ask to Buy; anon gating, who-looked, emoji packs)</li>
+<h2 class='m'>your LATER verdicts (parked, on purpose)</h2><ul>
+<li>polls with options + votes (engine ready; composer parked per your call)</li>
+<li>QOTD · Daily-24 contest · leaderboards · quests</li>
 <li>profile customization: inks, top-8, stickers, badges, Spotify</li>
-<li>group chats, unsend, read receipts, typing indicators</li>
-<li>QOTD, Daily-24 contest, late-night mode, throwbacks, leaderboards, quests</li>
-<li>voice-note transcription; camera edit (type/draw/filter); subject-lift</li>
-<li>scheduled letters UI beyond capsules; ghost users; invite redemption server-side</li>
-<li>settings screen (notifications prefs, privacy toggles, data export, delete account)</li>
+<li>typing indicators; subject-lift text; scheduled letters beyond capsules</li>
+<li>invite redemption server-side (codes are real, redemption is phase-2)</li>
 </ul>
+<p class="note">everything else from the earlier unbuilt list is now BUILT: 17+ (StoreKit 2, Ask to Buy), group chats, unsend + honest receipts, late-night, throwbacks, camera edit, transcription, settings (appearance · knock · export · delete), ghosts, crush-letter expiry.</p>
 <h2 class='m'>compliance before public launch</h2><ul>
-<li>in-app terms/EULA link (Apple UGC requirement — privacy page exists, terms page doesn&#x27;t)</li>
 <li>moderation queue + 1-hour SLA staffing for threat reports</li>
 <li>App Privacy questionnaire (ASC web UI — yours)</li>
 <li>CSAM detection provider + NCMEC path (phase 2)</li>
