@@ -1,0 +1,45 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>seventeen — motion plan</title><link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>:root{--paper:#e3e2de;--ink:#29292b;--muted:#7a7875;--indigo:#3d30d9}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:'IBM Plex Mono',monospace;padding:40px 24px;max-width:1200px;margin:0 auto}
+h1{font-size:26px;font-weight:500;margin-bottom:4px}
+.sub{font-size:12px;color:var(--muted);margin-bottom:28px;line-height:1.8}
+h2{font-size:15px;font-weight:600;color:var(--indigo);margin:34px 0 4px}
+.note{font-size:11px;color:var(--muted);margin-bottom:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:14px}
+.cell img{width:100%;border-radius:12px;border:1px solid rgba(41,41,43,.1)}
+.cell figcaption{font-size:10.5px;color:var(--muted);margin-top:4px;text-align:center}
+nav{font-size:12px;margin-bottom:22px}
+nav a{color:var(--indigo);text-decoration:none;margin-right:14px}
+table{border-collapse:collapse;width:100%;font-size:12px}
+td,th{text-align:left;padding:6px 10px;border-bottom:1px solid rgba(41,41,43,.08);vertical-align:top}
+.b{color:var(--indigo)} .m{color:#a05a2c} .q{font-size:13px;line-height:2}
+ol,ul{margin:8px 0 8px 22px;font-size:12.5px;line-height:1.9}
+p{font-size:12.5px;line-height:1.9;margin:8px 0}</style></head><body>
+<nav><a href="index.html">screens</a><a href="features.html">features</a><a href="motion.html">motion plan</a><a href="questions.html">design questions</a></nav>
+<h1>motion & touch — the snap plan</h1>
+<p class="sub">how seventeen will move: instant, physical, one-thumb. phased so every step ships verified.</p>
+
+<h2>already live (build 59+)</h2>
+<ul><li>horizontal paged tabs — a small drag slides between people / feed / camera / chats / you, tab words in step</li>
+<li>swipe-back on every pushed screen + explicit ← everywhere</li>
+<li>swipe-down discards a captured photo; card drag on the deck with rotation</li>
+<li>haptic taxonomy: soft (small acts) · rigid (refusals) · heavy (peaks) · crown double-beat</li></ul>
+<h2>phase M1 — the snap feel (next build)</h2>
+<ul><li>interruptible spring physics on tab paging (response 0.32, damping 0.86 — snappy, never floaty)</li>
+<li>edge-swipe OUT of any pushed screen from anywhere on the left 40% of the screen, ~24pt travel threshold — barely move a finger</li>
+<li>camera as the center page: one page left/right from anywhere, cold-start &lt; 200ms preview</li>
+<li>swipe RIGHT on a chat row → opens the thread; swipe right inside thread → back (snap's signature)</li></ul>
+<h2>phase M2 — depth & continuity</h2>
+<ul><li>pull-down closes any full-screen ceremony (reveal, crown, acceptance) with rubber-banding</li>
+<li>matched-geometry transitions: person name → their page; deck card → reveal</li>
+<li>list rows settle with 20ms stagger on first appearance — never pop-in</li></ul>
+<h2>phase M3 — polish</h2>
+<ul><li>ProMotion 120Hz audit (no main-thread stalls; TimelineView for anything animated)</li>
+<li>Reduce Motion parity for every gesture (instant states, haptics kept)</li>
+<li>motion gate: XCUITest drives each gesture, screenshots midpoints, asserts frame pacing</li></ul>
+<h2>the rule</h2>
+<p>every gesture must be interruptible, reversible mid-flight, and under 350ms to commit. nothing blocks the thumb, ever.</p>
+</body></html>

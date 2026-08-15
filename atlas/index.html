@@ -1,0 +1,87 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>seventeen — every screen</title><link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>:root{--paper:#e3e2de;--ink:#29292b;--muted:#7a7875;--indigo:#3d30d9}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:'IBM Plex Mono',monospace;padding:40px 24px;max-width:1200px;margin:0 auto}
+h1{font-size:26px;font-weight:500;margin-bottom:4px}
+.sub{font-size:12px;color:var(--muted);margin-bottom:28px;line-height:1.8}
+h2{font-size:15px;font-weight:600;color:var(--indigo);margin:34px 0 4px}
+.note{font-size:11px;color:var(--muted);margin-bottom:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:14px}
+.cell img{width:100%;border-radius:12px;border:1px solid rgba(41,41,43,.1)}
+.cell figcaption{font-size:10.5px;color:var(--muted);margin-top:4px;text-align:center}
+nav{font-size:12px;margin-bottom:22px}
+nav a{color:var(--indigo);text-decoration:none;margin-right:14px}
+table{border-collapse:collapse;width:100%;font-size:12px}
+td,th{text-align:left;padding:6px 10px;border-bottom:1px solid rgba(41,41,43,.08);vertical-align:top}
+.b{color:var(--indigo)} .m{color:#a05a2c} .q{font-size:13px;line-height:2}
+ol,ul{margin:8px 0 8px 22px;font-size:12.5px;line-height:1.9}
+p{font-size:12.5px;line-height:1.9;margin:8px 0}</style></head><body>
+<nav><a href="index.html">screens</a><a href="features.html">features</a><a href="motion.html">motion plan</a><a href="questions.html">design questions</a></nav>
+<h1>seventeen — every screen</h1>
+<p class="sub">the whole app as of build 63 (+voice notes committed). live simulator captures where marked; the rest are pixel-true renders through the same pipeline that gates the build. this page regenerates from the app itself — it can never lie about what exists.</p>
+<h2>getting in</h2><div class='note'>the letters flow — every step skippable on the tour</div><div class='grid'>
+<figure class='cell'><img src='img/ob-title.png' loading='lazy'><figcaption>title letter</figcaption></figure>
+<figure class='cell'><img src='img/ob-phone.png' loading='lazy'><figcaption>phone</figcaption></figure>
+<figure class='cell'><img src='img/ob-code.png' loading='lazy'><figcaption>code</figcaption></figure>
+<figure class='cell'><img src='img/ob-welcome.png' loading='lazy'><figcaption>welcome letter</figcaption></figure>
+<figure class='cell'><img src='img/ob-age.png' loading='lazy'><figcaption>age — the one-way door</figcaption></figure>
+<figure class='cell'><img src='img/ob-name.png' loading='lazy'><figcaption>name</figcaption></figure>
+<figure class='cell'><img src='img/ob-school.png' loading='lazy'><figcaption>school (mandatory)</figcaption></figure>
+<figure class='cell'><img src='img/ob-contactswhy.png' loading='lazy'><figcaption>contacts — why</figcaption></figure>
+<figure class='cell'><img src='img/ob-contacts.png' loading='lazy'><figcaption>contacts</figcaption></figure>
+<figure class='cell'><img src='img/ob-line.png' loading='lazy'><figcaption>your one line</figcaption></figure>
+<figure class='cell'><img src='img/ob-photos.png' loading='lazy'><figcaption>photos</figcaption></figure>
+<figure class='cell'><img src='img/ob-queue.png' loading='lazy'><figcaption>the queue (door full)</figcaption></figure>
+<figure class='cell'><img src='img/ob-acceptance.png' loading='lazy'><figcaption>the acceptance letter</figcaption></figure>
+</div>
+<h2>the room — feed</h2><div class='note'>posts, polls, requests, threads</div><div class='grid'>
+<figure class='cell'><img src='img/feed.png' loading='lazy'><figcaption>feed (live)</figcaption></figure>
+<figure class='cell'><img src='img/thread.png' loading='lazy'><figcaption>a thread + replies (live)</figcaption></figure>
+<figure class='cell'><img src='img/composer.png' loading='lazy'><figcaption>composer</figcaption></figure>
+<figure class='cell'><img src='img/round.png' loading='lazy'><figcaption>the daily round</figcaption></figure>
+<figure class='cell'><img src='img/reveal-card.png' loading='lazy'><figcaption>today&#x27;s card (reveal)</figcaption></figure>
+<figure class='cell'><img src='img/reveal-outcome.png' loading='lazy'><figcaption>reveal outcome</figcaption></figure>
+</div>
+<h2>people &amp; flirting</h2><div class='note'>five a day, curated; reveal after the yes</div><div class='grid'>
+<figure class='cell'><img src='img/people.png' loading='lazy'><figcaption>the swipe deck (live)</figcaption></figure>
+<figure class='cell'><img src='img/people-store.png' loading='lazy'><figcaption>swipe card (store shot)</figcaption></figure>
+<figure class='cell'><img src='img/reveal-match.png' loading='lazy'><figcaption>the reveal — matched</figcaption></figure>
+<figure class='cell'><img src='img/person.png' loading='lazy'><figcaption>a person&#x27;s page</figcaption></figure>
+<figure class='cell'><img src='img/crush.png' loading='lazy'><figcaption>the crush letter</figcaption></figure>
+</div>
+<h2>chats</h2><div class='note'>actual chats — snap-structured, streaks, voice notes</div><div class='grid'>
+<figure class='cell'><img src='img/chats.png' loading='lazy'><figcaption>chat list (live)</figcaption></figure>
+<figure class='cell'><img src='img/chat-thread.png' loading='lazy'><figcaption>a thread (live)</figcaption></figure>
+</div>
+<h2>letters</h2><div class='note'>written at night, they arrive at 8am</div><div class='grid'>
+<figure class='cell'><img src='img/letters.png' loading='lazy'><figcaption>letters behind their door (live)</figcaption></figure>
+<figure class='cell'><img src='img/letter-open.png' loading='lazy'><figcaption>a letter, opening (live)</figcaption></figure>
+<figure class='cell'><img src='img/write-letter.png' loading='lazy'><figcaption>writing one (live)</figcaption></figure>
+<figure class='cell'><img src='img/letters-store.png' loading='lazy'><figcaption>letters (store shot)</figcaption></figure>
+</div>
+<h2>giving — the seventeen</h2><div class='note'>the economy: 17 a day, whispers, one-tap rows</div><div class='grid'>
+<figure class='cell'><img src='img/send.png' loading='lazy'><figcaption>give + send (store shot)</figcaption></figure>
+<figure class='cell'><img src='img/give-sparse.png' loading='lazy'><figcaption>give screen sparse (launch-day)</figcaption></figure>
+</div>
+<h2>camera</h2><div class='note'>snap-style: capture → send to a chat</div><div class='grid'>
+<figure class='cell'><img src='img/camera.png' loading='lazy'><figcaption>camera (sim — black, no hardware)</figcaption></figure>
+</div>
+<h2>you &amp; identity</h2><div class='note'>your page: photo, status, glances, tickets</div><div class='grid'>
+<figure class='cell'><img src='img/you.png' loading='lazy'><figcaption>your page (live)</figcaption></figure>
+<figure class='cell'><img src='img/invites.png' loading='lazy'><figcaption>golden tickets (live)</figcaption></figure>
+<figure class='cell'><img src='img/blocked.png' loading='lazy'><figcaption>blocked list</figcaption></figure>
+</div>
+<h2>safety</h2><div class='note'>report anything; crisis one tap away</div><div class='grid'>
+<figure class='cell'><img src='img/report.png' loading='lazy'><figcaption>report flow (live)</figcaption></figure>
+</div>
+<h2>ceremonies &amp; artifacts</h2><div class='note'>the peaks + everything that leaves the app</div><div class='grid'>
+<figure class='cell'><img src='img/crown.png' loading='lazy'><figcaption>the crown ceremony (store)</figcaption></figure>
+<figure class='cell'><img src='img/card-accept.png' loading='lazy'><figcaption>card: i&#x27;m in</figcaption></figure>
+<figure class='cell'><img src='img/card-queue.png' loading='lazy'><figcaption>card: i&#x27;m in line</figcaption></figure>
+<figure class='cell'><img src='img/card-spots.png' loading='lazy'><figcaption>card: spots left</figcaption></figure>
+<figure class='cell'><img src='img/card-crown.png' loading='lazy'><figcaption>card: the whole day</figcaption></figure>
+<figure class='cell'><img src='img/card-og.png' loading='lazy'><figcaption>link preview (og)</figcaption></figure>
+</div>
+</body></html>

@@ -1,0 +1,111 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>seventeen — features</title><link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>:root{--paper:#e3e2de;--ink:#29292b;--muted:#7a7875;--indigo:#3d30d9}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:'IBM Plex Mono',monospace;padding:40px 24px;max-width:1200px;margin:0 auto}
+h1{font-size:26px;font-weight:500;margin-bottom:4px}
+.sub{font-size:12px;color:var(--muted);margin-bottom:28px;line-height:1.8}
+h2{font-size:15px;font-weight:600;color:var(--indigo);margin:34px 0 4px}
+.note{font-size:11px;color:var(--muted);margin-bottom:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:14px}
+.cell img{width:100%;border-radius:12px;border:1px solid rgba(41,41,43,.1)}
+.cell figcaption{font-size:10.5px;color:var(--muted);margin-top:4px;text-align:center}
+nav{font-size:12px;margin-bottom:22px}
+nav a{color:var(--indigo);text-decoration:none;margin-right:14px}
+table{border-collapse:collapse;width:100%;font-size:12px}
+td,th{text-align:left;padding:6px 10px;border-bottom:1px solid rgba(41,41,43,.08);vertical-align:top}
+.b{color:var(--indigo)} .m{color:#a05a2c} .q{font-size:13px;line-height:2}
+ol,ul{margin:8px 0 8px 22px;font-size:12.5px;line-height:1.9}
+p{font-size:12.5px;line-height:1.9;margin:8px 0}</style></head><body>
+<nav><a href="index.html">screens</a><a href="features.html">features</a><a href="motion.html">motion plan</a><a href="questions.html">design questions</a></nav>
+<h1>every feature, and what's missing</h1>
+<p class="sub">left: built and live in TestFlight build 63 (+voice notes committed). right: honestly missing for users. you decide what stays, goes, and comes next — nothing here argues back.</p>
+<h2 class='b'>BUILT — in your hand today</h2>
+<h2>getting in</h2><ul>
+<li>letters-voiced onboarding (11 steps, all skippable on the demo tour)</li>
+<li>16+ one-way birthdate door, tier set forever</li>
+<li>mandatory school step</li>
+<li>the door: 17/school/day, TRUE queue + invite-to-advance</li>
+<li>acceptance letter ceremony + &#x27;i&#x27;m in&#x27; share card</li>
+</ul>
+<h2>the room (feed)</h2><ul>
+<li>chaos/new/top/requests sorts</li>
+<li>posts: rants, questions/polls (real options + votes), requests with i&#x27;d-go commits, photo posts</li>
+<li>threads: replies are the only signal — no likes anywhere</li>
+<li>anonymous posting (anonymous to the room, never to the engine)</li>
+<li>post-level report (works on anon posts)</li>
+<li>daily round quick-give deck</li>
+<li>the daily reveal — honest variable-ratio card (once/day, +3 truly banked or truly nothing)</li>
+</ul>
+<h2>people &amp; flirting</h2><ul>
+<li>swipe deck: FIVE a day, curated by the interest score (their glances, sends, replies — real signals, shown only as order)</li>
+<li>reveal AFTER the yes: their yes + emojis they&#x27;d held; a pass reveals nothing ever</li>
+<li>pre-messengers — one tap, back to the deck</li>
+<li>person pages: hero name, single/taken, live status, received pill, give / letter / crush / block / report</li>
+<li>glances — opening a page is a real look; &#x27;maya came by today&#x27;</li>
+<li>crush letters: rose-cost, anonymous, guess-from-five, wrong = 24h lock, right = indigo reveal → chat</li>
+<li>statuses: what they&#x27;re doing right now (never location)</li>
+<li>single / taken / say-nothing</li>
+</ul>
+<h2>chats</h2><ul>
+<li>actual DM threads, snap-structured rows (name + rail, no bubbles)</li>
+<li>enter sends, keyboard never drops</li>
+<li>real streaks 🔥 (days you BOTH showed up)</li>
+<li>photo messages (from the camera) + voice notes (hold to record)</li>
+</ul>
+<h2>letters</h2><ul>
+<li>written tonight → 8am delivery, sealed forever</li>
+<li>capsules: tomorrow / graduation / one-year</li>
+<li>2/week scarcity</li>
+<li>the 8am knock (local notification, only when a real letter is coming)</li>
+</ul>
+<h2>the seventeen (economy)</h2><ul>
+<li>17/day, reset midnight LA, no rollover; banked never expires</li>
+<li>costs 1·1·1·1·2·3·5·8·17; crown = the whole day, once, one person</li>
+<li>daily-first spend; 5s undo at tap; offline outbox with idempotency keys</li>
+<li>whispers — each emoji&#x27;s meaning under the pick</li>
+<li>giving streak (the only streak besides chat)</li>
+<li>crown ceremony + name-free crown share card</li>
+</ul>
+<h2>camera</h2><ul>
+<li>snap-style: full-bleed capture → send straight into a chat</li>
+<li>keep-it saves + becomes your page photo</li>
+<li>swipe-down = it never happened</li>
+</ul>
+<h2>growth</h2><ul>
+<li>3 golden tickets (real unique codes + pitch share)</li>
+<li>spots-left share on you page + empty feed</li>
+<li>queue letter share (&#x27;join from this and i move up&#x27;)</li>
+<li>live site: seventeenla.com content + og link preview + TestFlight funnel</li>
+</ul>
+<h2>safety (never paid, always on)</h2><ul>
+<li>16+ wall fail-closed at EVERY surface, both directions</li>
+<li>block = mutual disappearance; blocked list with undo</li>
+<li>report person/post — five RULES.md reasons, auto-block, reporter anonymous</li>
+<li>crisis lines: 988 / 741741 / 911 — taps never logged</li>
+</ul>
+<h2 class='m' style='margin-top:40px'>MISSING — the honest gaps</h2>
+<h2 class='m'>needs the phase-2 backend (biggest user gap)</h2><ul>
+<li>everything is single-device in-memory: no real accounts, nothing syncs, seeds reset on reinstall</li>
+<li>real phone/school verification (stubs accept anything)</li>
+<li>realtime: their messages/typing/presence/glances actually arriving</li>
+<li>push notifications (the 8am knock is local-only; nothing else pushes)</li>
+<li>real photos of real people (deck/person pages show doodles, not faces)</li>
+</ul>
+<h2 class='m'>decided-but-unbuilt from your 500-item inventory</h2><ul>
+<li>17+ subscription (StoreKit, Ask to Buy; anon gating, who-looked, emoji packs)</li>
+<li>profile customization: inks, top-8, stickers, badges, Spotify</li>
+<li>group chats, unsend, read receipts, typing indicators</li>
+<li>QOTD, Daily-24 contest, late-night mode, throwbacks, leaderboards, quests</li>
+<li>voice-note transcription; camera edit (type/draw/filter); subject-lift</li>
+<li>scheduled letters UI beyond capsules; ghost users; invite redemption server-side</li>
+<li>settings screen (notifications prefs, privacy toggles, data export, delete account)</li>
+</ul>
+<h2 class='m'>compliance before public launch</h2><ul>
+<li>in-app terms/EULA link (Apple UGC requirement — privacy page exists, terms page doesn&#x27;t)</li>
+<li>moderation queue + 1-hour SLA staffing for threat reports</li>
+<li>App Privacy questionnaire (ASC web UI — yours)</li>
+<li>CSAM detection provider + NCMEC path (phase 2)</li>
+</ul>
+<p>the full 500-item inventory from your old docs lives in the repo: docs/17plus-feature-inventory.md</p></body></html>
